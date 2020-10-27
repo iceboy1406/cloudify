@@ -1,0 +1,77 @@
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../font/poppins.ttf);
+}
+body {
+  overflow-x: hidden;
+  font-family: roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+.App {
+  overflow-x: hidden;
+}
+.App::-webkit-scrollbar {
+  display: none;
+}
+button:focus {
+  outline: none;
+}
+p {
+  font-family: poppins;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  /* To remove "blue" effect when click */
+  cursor: default;
+}
+.container {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+/* Tablet View */
+@media (min-width: 767px) {
+  .container {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+/* Desktop View / mini */
+@media (min-width: 992px) {
+  a, button {
+    cursor: pointer;
+  }
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+/* Desktop Screen / pc */
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+/* Wide Screen */
+@media (min-width: 1400px) {
+  .container {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+}

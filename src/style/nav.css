@@ -1,0 +1,93 @@
+/* Mobile View */
+nav {
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  transition: .3s ease-out;
+  z-index: 10;
+}
+nav.active {
+  background-color: #308af8;
+  box-shadow: 0 .25rem 5rem rgba(0, 0, 0, 0.05);
+}
+.nav-brand a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  font-family: roboto;
+  font-size: 1.25rem;
+}
+.nav-brand a svg {
+  margin-right: 0.75rem;
+}
+.nav-item {
+  position: fixed;
+  width: 250px;
+  background-color: #fff;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  box-shadow: 0.25rem 0 2rem rgba(0, 0, 0, 0.2);
+  padding: 0.75rem;
+  transform: translateX(-300px);
+  transition: 0.3s;
+}
+/* When Sidebar appear */
+.nav-item.tampil {
+  transform: translateX(0);
+}
+.nav-link {
+  display: block;
+  color: black;
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.35rem;
+  transition: ease-in-out 0.3s;
+}
+.nav-link:hover {
+  color: inherit;
+  background-color: #308af8;
+}
+.toggle-nav {
+  width: 45px;
+  height: 45px;
+  /* To centering burger icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-nav svg {
+  color: #fff;
+  width: 30px;
+  height: 30px;
+}
+.toggle-nav:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .toggle-nav {
+    display: none;
+  }
+  .nav-item {
+    position: unset;
+    width: unset;
+    background-color: transparent;
+    height: unset;
+    box-shadow: unset;
+    padding: 0;
+    transition: unset;
+    transform: unset;
+  }
+  .nav-link {
+    color: inherit;
+    display: inline-block;
+    transition: unset;
+  }
+}

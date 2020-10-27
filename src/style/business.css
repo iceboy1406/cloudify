@@ -1,0 +1,39 @@
+.business-section {
+  padding: 3rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100vw;
+}
+.business-section .cloud img{
+  width: 50px;
+}
+.business-list {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.business-list img{
+  margin-right: 1rem;
+  margin-bottom: .75rem;
+  width: 6rem;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .business-section .title h2 {
+    font-size: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .business-list img {
+    width: 8rem;
+    margin-right: 3rem;
+  }
+}

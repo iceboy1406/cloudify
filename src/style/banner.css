@@ -1,0 +1,93 @@
+.banner-section {
+  height: 85vh;
+  background-color: #308af8;
+  padding: 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.banner-section .caption {
+  margin-bottom: 50px;
+}
+.banner-section h1 {
+  color: inherit;
+}
+.banner-section p {
+  font-size: 0.75rem;
+}
+.banner-section button {
+  border: none;
+  padding: 1rem 2.75rem;
+  border-radius: 0.35rem;
+  color: #0975f8;
+  z-index: 2;
+  position: relative;
+}
+.banner-section .see-more {
+  display: flex;
+  justify-content: center;
+}
+.banner-section a {
+  display: block;
+  color: #fff;
+  margin-top: 0.5rem;
+  text-align: center;
+  z-index: 2;
+}
+.banner-section a svg {
+  width: 15px;
+  display: block;
+  margin: auto;
+}
+.banner-picture {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.banner-picture img {
+  width: 90vw;
+  margin-top: -120px;
+  transform: scale(1.25);
+}
+
+/* Tablet View */
+@media (min-width: 767px) {
+  .banner-section h1 {
+    font-size: 3rem;
+  }
+  .banner-section p {
+    font-size: 0.95rem;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 0.75rem;
+  }
+  .banner-picture img {
+    margin-top: -180px;
+  }
+}
+/* Desktop View */
+@media (min-width:1023px) {
+  .banner-section .caption {
+    margin-bottom: 100px;
+  }
+  .banner-section h1 {
+    font-size: 3.5rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .banner-section p {
+    font-size: 0.95rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 0.75rem;
+  }
+  .banner-picture img {
+    width: 80vw;
+    margin-top: -250px;
+  }
+}

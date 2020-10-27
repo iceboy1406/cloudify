@@ -1,0 +1,57 @@
+.started {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.started .box {
+  background-color: #3c70d2;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  padding-bottom: 14rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.started .box h1 {
+  color: #fff;
+  font-weight: normal;
+}
+.started .box p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.started .box button.primary {
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #4182fa;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.started .box button.secondary {
+  border: 1.5px solid #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #fff;
+}
+.started .box img {
+  position: absolute;
+  transform: scale(1.25);
+  transform-origin: left top;
+}
+@media (min-width: 767px) {
+  .started .box {
+    padding: 3rem 2.75rem;
+    padding-bottom: 4rem;
+    flex-direction: row;
+  }
+  .started .box .caption {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .started .box img{
+    right: 0;
+  }
+}

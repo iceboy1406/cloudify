@@ -1,0 +1,77 @@
+.triangle {
+  display: flex;
+  align-items: center;
+  transform: scale(0.75);
+  transform-origin: left top;
+  margin-top: 50px;
+}
+.card {
+  padding: 2.5rem 1.25rem;
+  background-color: #fff;
+  box-shadow: 0.125rem 0.25rem 5rem rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.triangle .two {
+  margin-left: 1rem;
+}
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+.card h4 {
+  margin: 0;
+}
+.card p {
+  font-size: 0.6rem;
+  color: #7e89a6;
+  margin: 0.5rem 0;
+}
+.card button {
+  border: none;
+  padding: 0.35rem 1.75rem;
+  font-size: 0.75rem;
+  background-color: #308af8;
+  color: #fff;
+}
+@media (min-width: 500px) {
+  .triangle {
+    transform:none;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 767px) {
+  .triangle {
+    transform: scale(.8);
+    transform-origin: right;
+    margin-top: 0;
+  }
+}
+/* Desktop View(Notebook) */
+@media (min-width: 1023px) {
+  .triangle {
+    transform: scale(.9);
+    transform-origin: unset;
+    margin-top: 0;
+  }
+}
+/* Desktop View (Laptop) */
+@media (min-width: 1200px) {
+  .triangle {
+    transform: scale(1.1);
+    transform-origin: right;
+    margin-top: 0;
+  }
+}
+/* Wide Screen */
+@media (min-width: 1400px) {
+  .triangle {
+    transform: scale(1.25);
+    transform-origin: right;
+    margin-top: 0;
+  }
+}

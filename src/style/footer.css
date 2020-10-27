@@ -1,0 +1,49 @@
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #D5D5D5;
+}
+footer .brand {
+  display: flex;
+  align-items: center;
+  color: #2670FA;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+footer .brand img {
+  margin-right: .5rem;
+  width: 40px;
+}
+
+footer .desc p {
+  color: #B2B2B2;
+}
+footer .link-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .link-list a{
+  display: block;
+  color: #B2B2B2;
+  margin-bottom: .75rem;
+}
+footer .link-list h3 {
+  margin-top: 0;
+}
+@media (min-width:767px) {
+  footer {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  footer .desc {
+    max-width: 30%;
+  }
+  footer .link-list {
+    width: 70%;
+    padding: 0 1.5rem;
+    justify-content: space-evenly;
+  }
+}
